@@ -1,0 +1,40 @@
+comando basicos git
+- configurar usuario -
+git config --global user.name "John Doe" #usuario
+git config --global user.email johndoe@example.com #correo asociado a git 
+
+- comando para inicializar repo local -
+git init #para iniciar repo
+git status #archivos agregados recientemente o con cambios
+
+- pasos para subir repo a remoto -
+git init 
+git add . #hace referencia a subir todos los archivos
+git status #muestra el estado del repo
+git commit -m "<agrega comentario>" #agrega descripción rapida de los cambio subidos
+git remote add origin +url del repo #cargar proyecto al repo remoto
+git branch -M main #cambio de la rama actual a main
+git push -u origin main #debe ir referente a la rama para subir cambios
+
+- comandos para clonar proyecto de un repo remoto -
+git clone +url del repo #clona el repo remoto a local
+
+- comandos para subir cambios locales a repo remoto -
+git pull origin <rama actual> #baja los cambios de manera remota a local
+git status #verificar cambios antes de subir
+git add <nombre de archivo> #cuando solo quieres agregar un archivo
+git commit -m "comentario"
+git push origin +ramaactual
+
+- comandos para bajar cambios -
+git pull origin <rama de trabajo>
+
+- comandos para rabajar -
+git stash #elimina de manera temporal los cambios locales cortar
+git stash apply #restarua cambios eliminados con stash pegar
+
+NOTA: 
+Una vez inicializado el repo no es necesario usar el git init nuevamente. 
+Excepción de reiniciar el repo.
+git pull para tener actualizado el proecyto antes de comenzar a trabajar 
+git reset --hard origin/main #Your branch and 'origin/main' have diverged (tryhard)
