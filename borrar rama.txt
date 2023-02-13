@@ -1,0 +1,13 @@
+-- comandos para borrar ramas locales --
+
+git checkout main -primero debemso cambiarnos a la rama main
+
+-Estos comandos van a borrar la rama local -
+git branch -d <nombre de la rama>
+git branch -D <nombre de la rama>
+git git push origin --delete <nombre de la rama>
+
+-actualización de ramas
+git fetch -p -las branches que ya no existan en el repositorio remoto serán eliminadas en el repositorio local.
+git branch -a mostrara las ramas, si sigue apareciendo la rama algo se hizo mal
+
